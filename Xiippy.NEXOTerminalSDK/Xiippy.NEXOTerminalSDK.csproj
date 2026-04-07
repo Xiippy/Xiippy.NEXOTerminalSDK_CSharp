@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+     <Nullable>enable</Nullable>
+      <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+    <PropertyGroup>
+        <PackageId>Xiippy.NEXOTerminalSDK</PackageId>
+        <Version>1.0.0</Version>
+        <PackageTags>Xiippy.NEXOTerminalSDK:1.0.0; Xiippy.ai's simplified lightweight SDK for POS and e-commerce systems</PackageTags>
+        <Description>
+            Xiippy.NEXOTerminalSDK:1.0.0; Xiippy.ai's simplified NEXO SDK for POS systems to interface and interact with Xiippy terminals.
+        </Description>
+        <ReleaseNotes>Required for and used by the Xiippy terminals</ReleaseNotes>
+        <Authors>https://Xiippy.ai</Authors>
+        <Owners>https://Xiippy.ai</Owners>
+        <Copyright>Copyright 2026 Xiippy.ai</Copyright>
+        <License>MIT</License>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <PackageProjectUrl>https://xiippy.ai/</PackageProjectUrl>
+        <PackageTags>Xiippy;NEXO;Terminal;SDK;</PackageTags>
+        <PrivateRepositoryUrl>https://github.com/Xiippy/Xiippy.NEXOTerminalSDK_CSharp</PrivateRepositoryUrl>
+        <PackageOutputPath>bin\Package</PackageOutputPath>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="NuGet.Build.Tasks.Pack" Version="5.11.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Portable.BouncyCastle" Version="1.8.10" />
+    <PackageReference Include="Xiippy.POSeComSDK.Light" Version="1.3.0" />
+  </ItemGroup>
+
+</Project>
